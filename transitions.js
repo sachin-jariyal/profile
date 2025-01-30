@@ -50,14 +50,13 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-<span id="currentDate"></span>
 
-
-// for footer year
-let today = new Date('Y'); // Get current year
-let formattedDate = today.toLocaleDateString(); // Format date as desired
-document.getElementById("currentDate").innerHTML = formattedDate; 
-
+// Dynamically update the year in the footer
+const yearElement = document.getElementById('current-year');
+if (yearElement) {
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+}
 
 
 
