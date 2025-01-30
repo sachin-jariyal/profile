@@ -1,4 +1,10 @@
-// scripts.js
+// Dynamically update the year in the footer
+const yearElement = document.getElementById('current-year');
+if (yearElement) {
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+}
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -49,14 +55,3 @@ sections.forEach(section => {
   section.style.transform = 'translateY(20px)';
   observer.observe(section);
 });
-
-
-// Dynamically update the year in the footer
-const yearElement = document.getElementById('current-year');
-if (yearElement) {
-  const currentYear = new Date().getFullYear();
-  yearElement.textContent = currentYear;
-}
-
-
-
