@@ -49,3 +49,15 @@ sections.forEach(section => {
   section.style.transform = 'translateY(20px)';
   observer.observe(section);
 });
+
+<span id="currentDate"></span>
+
+
+// for footer year
+let today = new Date('Y'); // Get current year
+let formattedDate = today.toLocaleDateString(); // Format date as desired
+document.getElementById("currentDate").innerHTML = formattedDate; 
+
+
+
+
