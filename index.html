@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sachin Jariyal - Full-Stack Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
-  <!-- Add Bootstrap or Tailwind CSS CDN here -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Jariyal | Technical Lead Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <h1>Sachin Jariyal</h1>
-    <p>Full-Stack Developer | Tech Lead</p>
-    <p>Accomplished Full-Stack Developer with over a decade of experience in crafting modular microservices, real-time systems, and cloud-based architectures.</p>
+<body class="dark">
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="content">
+      <div class="text">
+        <h1>Sachin Jariyal</h1>
+        <h2>Technical Lead & Scalable Systems Architect</h2>
+        <p>Java, Node.js, React & Angular | 11+ Years | System Design | Product Engineering</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sachin-jariyal" target="_blank">LinkedIn</a>
+          <a href="https://github.com/sachin-jariyal" target="_blank">GitHub</a>
+          <a href="https://twitter.com/" target="_blank">Twitter</a>
+          <a href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="portrait.jpg" alt="Sachin Jariyal Portrait" />
+      </div>
+    </div>
+    <canvas id="particles"></canvas>
   </header>
 
   <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate Full-Stack Developer with expertise in JavaScript, PHP, and cloud-based architectures. I have a proven track record of leading teams and delivering impactful solutions that enhance user engagement and operational efficiency.</p>
+  <section id="about" class="about">
+    <div class="split">
+      <div class="text fade-in">
+        <h2>About Me</h2>
+        <p>With over 11 years in software engineering, I build distributed, scalable backend systems using Java, Node.js, and React. My strengths include microservices, clean architecture, API performance tuning, and leading high-impact teams.</p>
+        <p>Currently exploring AI integration into backend systems and pursuing opportunities to grow as a Technical Architect.</p>
+      </div>
+      <div class="bg-image">
+        <img src="workspace.jpg" alt="Workspace" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="filters">
+      <button>All</button>
+      <button>Backend</button>
+      <button>Frontend</button>
+      <button>AI</button>
+    </div>
+    <div class="grid">
+      <!-- Example project card -->
+      <div class="card">
+        <img src="showcase.jpg" alt="Project Screenshot" loading="lazy" />
+        <h3>Modernization Platform</h3>
+        <p>Microservices-based system re-architected from a monolith for millions of transactions daily.</p>
+        <span>Java, Spring Boot, Node.js, AWS</span>
+        <a href="#">View Details</a>
+      </div>
+      <!-- Add more cards -->
+    </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience">
+  <section id="experience" class="experience">
     <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>Technical Lead (Assistant Consultant) - Tata Consultancy Services</h3>
-      <p>Spearheaded a team of 10 developers on the Ericsson and Aligntech projects, delivering amplified software on schedule.</p>
-      <p>Designed and deployed microservices with Node.js, React.js, and TypeScript, streamlined system progress by 40% through Redis caching and achieving a 50% improvement in uptime with Heroku CI/CD pipelines.</p>
+    <div class="timeline">
+      <div class="card stagger">
+        <div class="logo">[Logo]</div>
+        <h3>Tata Consultancy Services</h3>
+        <h4>Technical Lead (Nov 2022 - Present)</h4>
+        <ul>
+          <li>Led backend architecture using Java, Node.js, PostgreSQL</li>
+          <li>Directed 6–10 engineers, agile practices</li>
+          <li>Reduced tech debt by 40%</li>
+        </ul>
+      </div>
+      <!-- Add more experience cards -->
     </div>
-    <!-- Add more experience items here -->
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Node.js, React.js, TypeScript, Angular, PHP</li>
-      <li>AWS (S3, SES, EC2, WorkMail), Azure, Heroku</li>
-      <li>Git, GitHub, Jenkins, Docker, Heroku pipelines</li>
-      <li>MySQL, PostgreSQL, MongoDB, Redis</li>
-    </ul>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>Masters of Computer Applications - Punjabi University</h3>
-      <p>Patiala, Punjab</p>
-    </div>
-    <div class="education-item">
-      <h3>Bachelors of Computer Applications - Himachal Pradesh University</h3>
-      <p>Kangra, HP</p>
+  <!-- Awards / Achievements Section -->
+  <section id="awards" class="awards">
+    <h2>Achievements</h2>
+    <div class="cards">
+      <div class="award">
+        <h3>Certified AWS Developer</h3>
+        <p>AWS Associate Level – 2024</p>
+      </div>
+      <!-- Add counters and more awards -->
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <div class="field">
+        <input type="text" name="name" required>
+        <label>Name</label>
+      </div>
+      <div class="field">
+        <input type="email" name="email" required>
+        <label>Email</label>
+      </div>
+      <div class="field">
+        <textarea name="message" required></textarea>
+        <label>Message</label>
+      </div>
       <button type="submit">Send</button>
     </form>
   </section>
 
-  <!-- Footer -->
-<footer>
-  <p>&copy; <span id="current-year"></span> Sachin Jariyal. All rights reserved.</p>
-  <p>Connect with me on <a href="https://www.linkedin.com/in/sachin-jariyal" target="_blank">LinkedIn</a> or <a href="https://github.com/sachinjariyal" target="_blank">GitHub</a>.</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Sachin Jariyal</p>
+  </footer>
+
+  <!-- Scripts for particles, animations, and effects will go here -->
 </body>
 </html>
