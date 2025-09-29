@@ -425,11 +425,11 @@
    transform: none;
  }
 
- .btn-resume:hover {
+ .btn-resume{
    text-decoration: none;
    color: #fff;
    background: var(--accent);
-   transform: none;
+   transform: none;  
  }
 
 
